@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE canciones SYSTEM "canciones.dtd">
+<canciones>
+    <cancion>
+        <duracion> 5:18 </duracion>
+        <anio> 2006 </anio>
+        <titulo> Weird Fishes/Arpeggi </titulo>
+
+        <compositores>
+            <compositor>
+                <nombres> Thom </nombres>
+                <apellidos> Yorke </apellidos>
+            </compositor>
+        </compositores>
+
+        <productores>
+            <productor>
+                <nombres> Nigel </nombres>
+                <apellidos> Godrich </apellidos>
+            </productor>
+        </productores>
+
+        <sello> XL Recordings </sello>
+        <artista> Radiohead </artista>
+    </cancion>
+
+    <cancion>
+    <duracion> 3:08 </duracion>
+    <anio> 2016 </anio>
+    <titulo> Half The World Away </titulo>
+
+    <compositores>
+        <compositor>
+            <nombres> Noel </nombres>
+            <apellidos> Gallagher </apellidos>
+        </compositor>
+    </compositores>
+
+    <productores>
+        <productor>
+            <nombres> Noel </nombres>
+            <apellidos> Gallagher </apellidos>
+        </productor>
+    </productores>
+
+    <sello> Decca Records </sello>
+    <artista> AURORA </artista>
+    </cancion>
+
+    <cancion>
+    <duracion> 4:30 </duracion>
+    <anio> 2013 </anio>
+    <titulo> She Changes The Weather </titulo>
+
+    <compositores>
+        <compositor>
+            <nombres> Austin </nombres>
+            <apellidos> Williams </apellidos>
+        </compositor>
+    </compositores>
+
+    <productores>
+        <productor>
+            <nombres> Austin </nombres>
+            <apellidos> Williams </apellidos>
+        </productor>
+    </productores>
+
+    <sello> Chess Club </sello>
+    <artista> Swim Deep </artista>
+    </cancion>
+</canciones>

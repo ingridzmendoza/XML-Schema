@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="canciones" type="cancionesType"/>
+  <xs:complexType name="compositorType">
+    <xs:sequence>
+      <xs:element name="nombres">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" Thom "/>
+            <xs:enumeration value=" Noel "/>
+            <xs:enumeration value=" Austin "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="apellidos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" Yorke "/>
+            <xs:enumeration value=" Gallagher "/>
+            <xs:enumeration value=" Williams "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compositoresType">
+    <xs:sequence>
+      <xs:element type="compositorType" name="compositor"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productorType">
+    <xs:sequence>
+      <xs:element name="nombres">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" Nigel "/>
+            <xs:enumeration value=" Noel "/>
+            <xs:enumeration value=" Austin "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="apellidos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" Godrich "/>
+            <xs:enumeration value=" Gallagher "/>
+            <xs:enumeration value=" Williams "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productoresType">
+    <xs:sequence>
+      <xs:element type="productorType" name="productor"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancionType">
+    <xs:sequence>
+      <xs:element name="duracion">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" 5:18 "/>
+            <xs:enumeration value=" 3:08 "/>
+            <xs:enumeration value=" 4:30 "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="anio">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" 2006 "/>
+            <xs:enumeration value=" 2016 "/>
+            <xs:enumeration value=" 2013 "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="titulo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" Weird Fishes/Arpeggi "/>
+            <xs:enumeration value=" Half The World Away "/>
+            <xs:enumeration value=" She Changes The Weather "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="compositoresType" name="compositores"/>
+      <xs:element type="productoresType" name="productores"/>
+      <xs:element name="sello">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" XL Recordings "/>
+            <xs:enumeration value=" Decca Records "/>
+            <xs:enumeration value=" Chess Club "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="artista">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" Radiohead "/>
+            <xs:enumeration value=" AURORA "/>
+            <xs:enumeration value=" Swim Deep "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancionesType">
+    <xs:sequence>
+      <xs:element type="cancionType" name="cancion" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
